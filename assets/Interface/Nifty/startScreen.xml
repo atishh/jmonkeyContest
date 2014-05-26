@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<nifty>
+    
+    <!-- load styles -->
+    <useStyles filename="nifty-default-styles.xml" />
+    <useControls filename="nifty-default-controls.xml" />
+    
+    <screen id="start" controller="mygame.ScreenAppState">
+        <layer childLayout="horizontal" id="layer1">
+            <image filename="Interface/Nifty/resources/start.png" height="100%" width="100%" />
+        </layer>
+        <layer id="layer" backgroundColor="#0000" childLayout="center">
+            <panel id="panel" align="left" valign="bottom"  childLayout="vertical" visibleToMouse="true">
+                <image id="StartGame" filename="Interface/Nifty/resources/StartGame.png" align="left" childLayout="overlay">
+                    <interact onClick="menuStartGame()"/>               
+                </image>
+
+                <image id="QuitGame" filename="Interface/Nifty/resources/quit.png" align="left" childLayout="overlay">     
+                    <interact onClick="menuQuitGame()"/>      
+                </image>
+            </panel>
+        </layer>
+    </screen>
+ 
+     <screen id="win" controller="mygame.ScreenAppState">
+        <layer childLayout="horizontal" id="layer1">
+            <image filename="Interface/Nifty/resources/win.png" height="100%" width="100%" />
+        </layer>
+        <layer id="layer" backgroundColor="#0000" childLayout="center">
+            <panel id="panel" align="left" valign="bottom"  childLayout="vertical" visibleToMouse="true">
+                <image id="StartGame" filename="Interface/Nifty/resources/StartGame.png" align="left" childLayout="overlay">
+                    <interact onClick="menuRestartGame()"/>               
+                </image>
+
+                <image id="QuitGame" filename="Interface/Nifty/resources/quit.png" align="left" childLayout="overlay">     
+                    <interact onClick="menuQuitGame()"/>      
+                </image>
+            </panel>
+        </layer>
+    </screen>
+    
+    <screen id="lost" controller="mygame.ScreenAppState">
+        <layer childLayout="horizontal" id="layer1">
+            <image filename="Interface/Nifty/resources/lost.png" height="100%" width="100%" />
+        </layer>
+        <layer id="layer" backgroundColor="#0000" childLayout="center">
+            <panel id="panel" align="left" valign="bottom"  childLayout="vertical" visibleToMouse="true">
+                <image id="StartGame" filename="Interface/Nifty/resources/StartGame.png" align="left" childLayout="overlay">
+                    <interact onClick="menuRestartGame()"/>               
+                </image>
+
+                <image id="QuitGame" filename="Interface/Nifty/resources/quit.png" align="left" childLayout="overlay">     
+                    <interact onClick="menuQuitGame()"/>      
+                </image>
+            </panel>
+        </layer>
+    </screen>
+        
+    <screen id="ingame" controller="mygame.ScreenAppState">
+        <layer childLayout="horizontal" id="layer2">
+            <panel id="panel" align="left" padding="20px" valign="top" childLayout="center" visibleToMouse="true">
+                <text id="ChickenFront" font="Interface/Fonts/ShowcardGothic.fnt" text="0/0" align="left" textSize="20" valign="center" />
+            </panel>
+        </layer>
+        
+        <layer childLayout="horizontal" id="layer3">
+            <panel id="panel2" align="right" padding="20px" valign="bottom" childLayout="center" visibleToMouse="true">
+                <text id="TimeFront" font="Interface/Fonts/ShowcardGothic.fnt" text="0/0" align="right" textSize="20" valign="center" />
+            </panel>
+        </layer>
+        
+    </screen>
+        
+    
+</nifty>

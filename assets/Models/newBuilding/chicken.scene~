@@ -1,0 +1,19 @@
+<scene exported_by="atsingh" formatVersion="1.0.1" previous_export_time="1400965140.286" export_time="1400966077.047" >
+  <nodes >
+    <node name="chiken" >
+      <position y="7.048394" x="-6.692053" z="5.122370" />
+      <rotation qy="0.000000" qx="0.000000" qz="-0.000000" qw="1.000000" />
+      <scale y="1.000000" x="1.000000" z="1.000000" />
+      <game >
+        <sensors />
+        <actuators />
+      </game>
+    </node>
+  </nodes>
+  <externals />
+  <environment >
+    <colourBackground r="0.5432485342025757" b="1.0" g="0.6841073036193848" />
+    <colourAmbient r="0.0" b="0.0" g="0.0" />
+    <colourDiffuse r="0.5432485342025757" b="1.0" g="0.6841073036193848" />
+  </environment>
+</scene>
